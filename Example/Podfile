@@ -1,0 +1,12 @@
+source "https://github.com/CocoaPods/Specs.git"
+
+use_frameworks! #导出SDK必须要告诉Cocoapods使用框架才会编译成framework否则就会成为.a 导致导出SDK失败
+inhibit_all_warnings!
+
+platform :ios, "12.0"
+
+target "TestSlider" do
+  pod "Masonry"
+end
+
+
